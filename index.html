@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Simple HTML Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; }
+        header, footer { background: #333; color: #fff; padding: 1em; text-align: center; }
+        nav { background: #444; padding: 0.5em; }
+        nav a { color: #fff; margin: 0 1em; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 2em; }
+    </style>
+    <script>
+        function showMessage() {
+            document.getElementById('js-message').textContent = "JavaScript is working!";
+        }
+        window.onload = showMessage;
+    </script>
 </head>
 <body>
-    <h1>Welcome to My Simple HTML Page</h1>
-    <p>This is a basic HTML page.</p>
+    <header>
+        <h1>My Website Header</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <h2>Welcome to My Simple HTML Page</h2>
+        <p>This is a basic HTML page with added structure and JavaScript.</p>
+        <p id="js-message"></p>
+    </main>
+    <footer>
+        &copy; 2025 My Website. All rights reserved.
+    </footer>
 </body>
 </html>
