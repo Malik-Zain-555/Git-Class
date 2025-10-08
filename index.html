@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Professional HTML Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showMessage() {
+            document.getElementById('js-message').textContent = "JavaScript is working perfectly!";
+        }
+        window.onload = showMessage;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./Projects.html">Projects</a>
+        <a href="./Contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to My Page</h2>
+            <p>This is a clean, simple HTML structure — styled for a modern look and enhanced with JavaScript.</p>
+            <p id="js-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
