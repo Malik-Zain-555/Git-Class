@@ -1,5 +1,6 @@
 alert("Welcome to my website!");
 
-let name = window.prompt("What is your name?");
-
-alert("Hello, " + name + "! Enjoy your stay.");
+const Vname = window.prompt("What is your name?");
+if (Vname) {
+  alert("Hello, " + Vname + "! Enjoy your stay.");
+}
